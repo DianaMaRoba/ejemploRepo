@@ -4,6 +4,9 @@ estilo.css
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: rgb(164, 209, 247);
+}
 text{
     background-color: aqua;
 }
