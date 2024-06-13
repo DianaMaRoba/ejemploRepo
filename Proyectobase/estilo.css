@@ -5,8 +5,10 @@ estilo.css
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(164, 209, 247);
+    background-color: rgb(128, 176, 248);
 }
-text{
-    background-color: aqua;
+.text{
+    background-color: rgb(223, 201, 172);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    padding: 20px;
 }
