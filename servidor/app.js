@@ -42,5 +42,34 @@ fs.readFile('./modulosfuncionales/archivo.txt',function(error,contenido){
     else{
         console.log(contenido.toString());
     }
-})
+});
 
+fs.rename('./modulosfuncionales/archivo.txt','./modulosfuncionales/archivonuevo.txt',function(error){
+    if(error){
+        console.log(error);
+    }
+    else{
+        console.log('el archivo fue renombrado');
+    }   
+
+});
+
+fs.appendFile('./modulosfuncionales/archivonuevo.txt'," nuevo texto adicionado al archivo",function(error){
+    if(error){
+        console.log(error);
+
+    }
+    else{
+        console.log('el archivo fue modificado');
+    }   
+
+});
+fs.unlink('./modulosfuncionales/archivonuevo.txt',function(error){
+    if(error){
+        console.log(error);
+
+    }
+    else{
+        console.log('el archivo fue eliminado');
+    }   
+});
